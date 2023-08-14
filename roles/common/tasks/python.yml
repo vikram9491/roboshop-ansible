@@ -17,15 +17,3 @@
 - name: SystemD Setup
   ansible.builtin.import_tasks: systemd-setup.yml
 
-
-
-- name: Install python
-  ansible.builtin.yum:
-    name:
-     - python36
-     - gcc
-     - python3-delevl
-     state: installed
-- name: App Pre-requsites
-  ansible.built.in.import_tasks: app-preq.yml
-- name: 
